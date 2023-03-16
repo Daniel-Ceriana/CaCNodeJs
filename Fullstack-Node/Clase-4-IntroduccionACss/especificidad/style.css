@@ -1,0 +1,28 @@
+/* especificidad */
+
+body p {
+    color: red;
+}
+
+p {
+    color: violet;
+}
+
+.color-verde {
+    color: green;
+}
+
+
+/* selectores combinados */
+
+.menu>li {
+    color: red;
+}
+
+h2+p {
+    color: blue;
+}
+
+h2~p {
+    color: green;
+}

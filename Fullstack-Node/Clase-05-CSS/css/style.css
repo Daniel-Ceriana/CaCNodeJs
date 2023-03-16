@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body p {
+    color: red;
+}
+
+p {
+    color: violet;
+}
+
+.color-verde {
+    color: green;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* selectores combinados */
+
+.menu>li {
+    color: red;
+}
+
+h2+p {
+    color: blue;
+}
+
+h2~p {
+    color: green;
+}
