@@ -1,0 +1,57 @@
+body {
+    /* margin: 0; */
+    /* height: 50vh; */
+    /* width: 95vw; */
+    background-color: aliceblue;
+}
+
+.container {
+    display: grid;
+    min-height: 90vh;
+    grid-template-columns: 5fr 1fr 2fr;
+    /* grid-template-rows: 5em 20em 5em; */
+    grid-template-rows: auto 1fr .5fr .5fr auto;
+    grid-template-areas: "header header header" "main main aside" "a article b" "c d d" "footer footer footer";
+    gap: 1em;
+    background-color: aqua;
+}
+
+header {
+    background-color: red;
+    grid-area: header;
+}
+
+main {
+    background-color: darkorange;
+    grid-area: main;
+}
+
+aside {
+    background-color: green;
+    grid-area: aside;
+}
+
+footer {
+    background-color: blue;
+    grid-area: footer;
+}
+
+.asd {
+    background-color: red;
+    grid-area: a;
+}
+
+article {
+    background-color: darkcyan;
+    grid-area: article;
+}
+
+.dsa {
+    background-color: greenyellow;
+    grid-area: b;
+}
+
+.combinado {
+    background-color: chocolate;
+    grid-area: d;
+}
