@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        body {
+            height: 200vh;
+        }
+        
+        .container {
+            background-color: teal;
+            padding: 1em;
+        }
+        
+        .cuadrado {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            border: 1px solid white;
+        }
+        
+        .cuadrado-fixed {
+            background-color: green;
+            position: fixed;
+            right: 50%;
+            top: 0;
+        }
+        
+        .cuadrado-relative {
+            background-color: blue;
+            position: relative;
+            left: 100px;
+            top: 50px;
+        }
+        
+        .cuadrado-absolute {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+        
+        .cuadrado-sticky {
+            background-color: darkorange;
+            position: sticky;
+            top: 0;
+        }
+        
+        .cuadrado-sticky1 {
+            background-color: skyblue;
+            position: sticky;
+            top: 0;
+            left: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="cuadrado"></div>
+        <div class="cuadrado cuadrado-sticky"></div>
+        <div class="cuadrado"></div>
+        <div class="cuadrado cuadrado-absolute"></div>
+        <div class="cuadrado cuadrado-relative"></div>
+        <div class="cuadrado cuadrado-fixed"></div>
+        <div class="cuadrado cuadrado-sticky1">asdasd</div>
+    </section>
+</body>
+
+</html>

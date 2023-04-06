@@ -1,0 +1,37 @@
+/*main p:first-child para ser mas especifico*/
+
+main p:first-child {
+    color: red;
+}
+
+main p:first-child::first-letter {
+    font-size: 3em;
+}
+
+p:nth-child(3) {
+    color: green;
+}
+
+p:last-of-type {
+    color: aqua;
+}
+
+p:first-of-type {
+    color: blue;
+}
+
+p:last-of-type:hover {
+    color: red;
+    transform: rotate(20deg);
+    /* transition: color 2s; */
+    transition: all 2s;
+}
+
+p::selection {
+    background-color: black;
+    color: red;
+}
+
+.segundo-parrafo::before {
+    content: "- ";
+}

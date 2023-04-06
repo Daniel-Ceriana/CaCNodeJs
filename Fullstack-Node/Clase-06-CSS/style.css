@@ -1,0 +1,18 @@
+html {
+    font-size: 62.5%;
+    /* para que en vez de 16 pixeles por defecto, sean 10 */
+}
+
+h1 {
+    width: 100%;
+    border: 2px solid;
+    box-sizing: border-box;
+}
+
+h2 {
+    width: 50vw;
+}
+
+main {
+    margin: 0 auto;
+}

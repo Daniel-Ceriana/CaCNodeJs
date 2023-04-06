@@ -1,0 +1,43 @@
+.cuadrado {
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+}
+
+.cuadrado:hover {
+    background-color: red;
+}
+
+h1 {
+    display: inline-block;
+}
+
+h1:hover {
+    text-decoration: underline;
+}
+
+a {}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: blue;
+    text-decoration: line-through !important;
+    /*no funciona por problemas de precedencia */
+}
+
+a:active {
+    color: pink;
+}
+
+a:hover {
+    cursor: crosshair;
+}
+
+input:focus {
+    border: 5px solid red;
+    outline: 5px solid green;
+    outline-offset: 10px;
+}
