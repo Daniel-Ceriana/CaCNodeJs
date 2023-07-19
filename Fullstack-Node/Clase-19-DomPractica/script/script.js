@@ -40,9 +40,7 @@ const renderTareas = () => {
         <tr>
             <td class="${tarea.complete ? "complete" : ""}">${tarea.text}</td>
             <td>
-            <button data-id="${
-              tarea.id
-            }" class="btn-completar">Completar</button>
+            <button data-id="${tarea.id}" class="btn-completar">Completar</button>
             <button onclick="editarTarea(${tarea.id})">Editar</button>
             <button onclick="borrarTarea(${tarea.id})">Borrar</button>
             </td>

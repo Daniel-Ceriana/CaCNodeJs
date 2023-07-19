@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <%- include('./partials/header.ejs')-%>
+
+        <main>
+            <h1>Usuarios</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Correo</th>
+                        <th>
+                            <a href="/users/create" class="">Create</a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <% rows.forEach(user => { 
+                        %>
+                        <tr>
+                            <td>
+                                <%=user.id%>
+                            </td>
+                            <td>
+                                <%=user.email%>
+                            </td>
+
+                        </tr>
+                        <% }); %>
+
+                </tbody>
+            </table>
+
+        </main>
+
+        <%- include('./partials/footer.ejs')-%>
+
+</body>
+
+</html>
